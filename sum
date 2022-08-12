@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+     {
+       int r,s=0,p=1,t,n,res=0,a;
+    scanf("%d",&n);
+    t=n;
+        while(n!=0)
+        {
+            r=n%10;
+            s=s+r;
+            p=r*p;
+            n=n/10;
+        res=(p-s);
+        }
+        printf("%d\n",p);
+        printf("%d\n",s);
+        printf("%d\n",res);
+}
