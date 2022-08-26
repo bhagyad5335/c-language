@@ -1,0 +1,16 @@
+2. / * alternative *\
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char str[20];
+int i;
+printf("Enter a string:");
+scanf("%[a-z,A-Z]s",str);
+for(i=0;str[i]!='\0';i++)
+{
+if(i%2==0)
+str[i]=str[i]-32;
+}
+printf("%s",str);
+}
