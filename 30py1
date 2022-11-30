@@ -1,0 +1,31 @@
+Hairoilc=120
+tomatosaucec=80
+refinedoilc=150
+horliksc=250
+wheatflourc=100
+cphno=int(input())
+cname=input()
+address=input()
+Hairoilqu=int(input())
+tomatosaucequ=int(input())
+refinedoilqu=int(input())
+horliksqu=int(input())
+wheatflourqu=int(input())
+bill=(Hairoilqu*Hairoilc)+(tomatosaucequ*tomatosaucec)+(refinedoilqu*refinedoilc)+(horliksqu*horliksc)+(wheatflourqu*wheatflourc)
+if bill>3000:
+    tax=bill*3/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+    print('bill without tax',bill)
+    tax=tax+bill
+    print('cphno number:',cphno)
+    print('cname:',cname)
+    print('address:',address)
+    print('Tax:',tax)
+    print('Bill:',bill)
