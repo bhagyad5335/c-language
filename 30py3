@@ -1,0 +1,25 @@
+sno=int(input())
+cname=input()
+old_reading=int(input())
+new_reading=int(input())
+units=new_reading-old_reading
+if units<=300:
+    amt=units*185/100
+    charge=35
+elif units>300 and units<=500:
+    amt=units*28/10
+    charge=45
+elif units>500 and units<=800:
+    amt=units*350/100
+    charge=68
+elif units>800 and units<=1000:
+    amt=units*645/100
+    charge=100
+    netamt=amt+charge
+    print('sno',sno)
+    print('electric information')
+    print('cname',cname)
+    print('old_reading',old_reading)
+    print('new_reading',new_reading)
+    print('total units',units)
+    print('net amt',netamt)
